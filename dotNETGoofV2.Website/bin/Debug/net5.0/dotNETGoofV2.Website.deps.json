@@ -33,10 +33,12 @@
     ".NETCoreApp,Version=v5.0": {
       "dotNETGoofV2.Website/1.0.0": {
         "dependencies": {
+          "EJS": "1.0.0",
+          "Handlebars.Net": "1.0.0-alpha2",
           "Microsoft.AspNet.SignalR": "2.4.2",
           "Microsoft.Owin": "3.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
-          "System.Text.Encodings.Web": "4.5.0",
+          "System.Text.Encodings.Web": "4.5.1",
           "TinyMCE": "4.8.2",
           "Wire": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -330,6 +332,18 @@
           "dotNETGoofV2.Website.dll": {}
         }
       },
+      "EJS/1.0.0": {},
+      "Handlebars.Net/1.0.0-alpha2": {
+        "runtime": {
+          "lib/Handlebars.dll": {
+            "assemblyVersion": "1.0.5243.21535",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/Handlebars.dll": {}
+        }
+      },
       "Humanizer.Core/2.2.0": {
         "dependencies": {
           "NETStandard.Library": "1.6.1"
@@ -341,10 +355,51 @@
           }
         }
       },
-      "Microsoft.AspNet.SignalR/2.4.2": {},
+      "jQuery/1.6.4": {},
+      "Microsoft.AspNet.SignalR/2.4.2": {
+        "dependencies": {
+          "Microsoft.AspNet.SignalR.JS": "2.4.2",
+          "Microsoft.AspNet.SignalR.SystemWeb": "2.4.2"
+        }
+      },
+      "Microsoft.AspNet.SignalR.Core/2.4.2": {
+        "dependencies": {
+          "Microsoft.Owin.Security": "2.1.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {
+            "assemblyVersion": "2.4.2.0",
+            "fileVersion": "2.4.2.21106"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.SignalR.JS/2.4.2": {
+        "dependencies": {
+          "jQuery": "1.6.4"
+        }
+      },
+      "Microsoft.AspNet.SignalR.SystemWeb/2.4.2": {
+        "dependencies": {
+          "Microsoft.AspNet.SignalR.Core": "2.4.2",
+          "Microsoft.Owin.Host.SystemWeb": "2.1.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.SignalR.SystemWeb.dll": {
+            "assemblyVersion": "2.4.2.0",
+            "fileVersion": "2.4.2.21106"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.SignalR.SystemWeb.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "dependencies": {
-          "System.Text.Encodings.Web": "4.5.0"
+          "System.Text.Encodings.Web": "4.5.1"
         }
       },
       "Microsoft.AspNetCore.Razor/2.2.0": {
@@ -648,6 +703,36 @@
         },
         "compile": {
           "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.SystemWeb/2.1.0": {
+        "dependencies": {
+          "Microsoft.Owin": "3.0.0",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.30113.529"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security/2.1.0": {
+        "dependencies": {
+          "Microsoft.Owin": "3.0.0",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.30113.529"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.CodeGeneration/5.0.2": {
@@ -1536,7 +1621,7 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
-      "System.Text.Encodings.Web/4.5.0": {},
+      "System.Text.Encodings.Web/4.5.1": {},
       "System.Text.RegularExpressions/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -3316,6 +3401,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "EJS/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cRpfDd/FfesbTg9LuOBboN/SJCgPvFuG89ZFdxlJU4PHMfPuOplz4tZH1K0HDBhTZtPvP/SUOBU1fTxlEkr71A==",
+      "path": "ejs/1.0.0",
+      "hashPath": "ejs.1.0.0.nupkg.sha512"
+    },
+    "Handlebars.Net/1.0.0-alpha2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8BXD3eqGo2d8c7WRmjVRzfG7RY1/Z3+F5x+wscH/2DAgQk8syh0Mx5ApdRqYncnlW3xpR4yLI3014vHqyuLyWA==",
+      "path": "handlebars.net/1.0.0-alpha2",
+      "hashPath": "handlebars.net.1.0.0-alpha2.nupkg.sha512"
+    },
     "Humanizer.Core/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -3323,12 +3422,40 @@
       "path": "humanizer.core/2.2.0",
       "hashPath": "humanizer.core.2.2.0.nupkg.sha512"
     },
+    "jQuery/1.6.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8RzoZQFeFYL/cINRXksLWyl8D5TKctZ/2G8hrlOLLM5OgFNI9h3t3l5tB+BBbsBUxaPUageVe0p9ruU5jrFeow==",
+      "path": "jquery/1.6.4",
+      "hashPath": "jquery.1.6.4.nupkg.sha512"
+    },
     "Microsoft.AspNet.SignalR/2.4.2": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-8NAm5wmNP+NkqnKqFKWcj7F2JMaQSsqDq5Nx3LnaMmJgHsHYiCx3hAXzXo+047AcJCtYyAvVRUyjWS4NIpEn2A==",
       "path": "microsoft.aspnet.signalr/2.4.2",
       "hashPath": "microsoft.aspnet.signalr.2.4.2.nupkg.sha512"
+    },
+    "Microsoft.AspNet.SignalR.Core/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mpkCnN9sF4zBrE6Gkz7rmJL/as4JMGZDCV/dfcUh6mDwFdbGGYWBzchQOW1mWCx/3EBzHK+KkBr8+WGwTDejwg==",
+      "path": "microsoft.aspnet.signalr.core/2.4.2",
+      "hashPath": "microsoft.aspnet.signalr.core.2.4.2.nupkg.sha512"
+    },
+    "Microsoft.AspNet.SignalR.JS/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sqzffcIbMGPd3BgaNUsqvxnBvm3cKi8LXqzcGe+8KPHxZ/U4O0uDJOKJS6HN9c4xQmVUu7C0G4iNjO3jnd7yLg==",
+      "path": "microsoft.aspnet.signalr.js/2.4.2",
+      "hashPath": "microsoft.aspnet.signalr.js.2.4.2.nupkg.sha512"
+    },
+    "Microsoft.AspNet.SignalR.SystemWeb/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VzMfXFIDsQwWXIXJZlMkOSTW6DnjZ4ZgMcXM4ihbg014DgAezrsNG9aNcsIjNSyDWvMG7iT0oAREjmB+Dvu1Cw==",
+      "path": "microsoft.aspnet.signalr.systemweb/2.4.2",
+      "hashPath": "microsoft.aspnet.signalr.systemweb.2.4.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "type": "package",
@@ -3441,6 +3568,20 @@
       "sha512": "sha512-SpMoiTFNsfzlo4VFYVtlErbBpm84pNVnhAbihzm1JCaXs7VfHqs/MEXEJ4Xtr1jXEp2hyKYpno8v8P58KTZVEA==",
       "path": "microsoft.owin/3.0.0",
       "hashPath": "microsoft.owin.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.Owin.Host.SystemWeb/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S+YOPgtQuXlKGh1OZCVzvmz++2ibNeACzDlMpeXFN1QBUf9l+gstfV0f5hTbhmkDBE8LrSCBWu+9Rrte+ivNhg==",
+      "path": "microsoft.owin.host.systemweb/2.1.0",
+      "hashPath": "microsoft.owin.host.systemweb.2.1.0.nupkg.sha512"
+    },
+    "Microsoft.Owin.Security/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4n1V0p+O6W1L0xHUM8Cjp2Y+MmmUkiCZv6PvRNIDCJD9zlerBJa2HECo9lUiWC+KuasQJ3QxB1FmipNBxdXXIQ==",
+      "path": "microsoft.owin.security/2.1.0",
+      "hashPath": "microsoft.owin.security.2.1.0.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/5.0.2": {
       "type": "package",
@@ -4037,12 +4178,12 @@
       "path": "system.text.encoding.extensions/4.3.0",
       "hashPath": "system.text.encoding.extensions.4.3.0.nupkg.sha512"
     },
-    "System.Text.Encodings.Web/4.5.0": {
+    "System.Text.Encodings.Web/4.5.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Xg4G4Indi4dqP1iuAiMSwpiWS54ZghzR644OtsRCm/m/lBMG8dUBhLVN7hLm8NNrNTR+iGbshCPTwrvxZPlm4g==",
-      "path": "system.text.encodings.web/4.5.0",
-      "hashPath": "system.text.encodings.web.4.5.0.nupkg.sha512"
+      "sha512": "sha512-8lfETN/1lu0QD+XQaDCxn6InX3KYJHCFO6Iqrm92zn9eOEeonTuyisKxW0nLZfse598LibhEItiRdPzVn8Beyg==",
+      "path": "system.text.encodings.web/4.5.1",
+      "hashPath": "system.text.encodings.web.4.5.1.nupkg.sha512"
     },
     "System.Text.RegularExpressions/4.3.0": {
       "type": "package",
